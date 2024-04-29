@@ -10,6 +10,9 @@ public class Libro {
 
     public Libro(String titulo, String autor, int anioPublicacion, String genero) {
 
+        /**
+     * Complejidad temporal: O(1) Tiempo constante
+     */
         this.titulo = titulo;
         this.autor = autor;
         this.anioPublicacion = anioPublicacion;
@@ -17,17 +20,23 @@ public class Libro {
         this.leido = false;
 
     }
-
+/**
+     * Complejidad temporal: O(1) Tiempo constante
+     */
     public String mostrarInformacion() {
         String mostrar = titulo + " " + autor + " " + anioPublicacion + " " + genero;
         return mostrar;
 
     }
-
+/**
+     * Complejidad temporal: O(1) Tiempo constante
+     */
     public void marcarLeido() {
         leido = true;
     }
-
+/**
+     * Complejidad temporal: O(1) Tiempo constante
+     */
     public boolean esAntiguo() {
         int diferencia = 2024 - anioPublicacion;
 
@@ -37,16 +46,28 @@ public class Libro {
             return false;
         }
     }
-
+/**
+     * Complejidad temporal: O(1) Tiempo constante
+     */
     public String getTitulo() {
         return titulo;
     }
-
+/**
+     * Complejidad temporal: O(1) Tiempo constante
+     */
     public String getAutor() {
         return autor;
     }
-
+/**
+     * Complejidad temporal: O(1) Tiempo constante
+     */
     public String getGenero() {
         return genero;
+    }
+    /**
+     * Complejidad temporal: O(1) Tiempo constante
+     */
+   public boolean isLeido() {
+        return leido;
     }
 }
