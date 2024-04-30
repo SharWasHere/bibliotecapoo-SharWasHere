@@ -20,6 +20,10 @@ public class Libro {
         this.leido = false;
 
     }
+
+    public Libro() {
+    }
+    
 /**
      * Complejidad temporal: O(1) Tiempo constante
      */
@@ -71,3 +75,4 @@ public class Libro {
         return leido;
     }
 }
+
